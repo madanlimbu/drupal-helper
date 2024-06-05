@@ -1,0 +1,6 @@
+ip_filter.config_form:
+  title: 'IP Filter Config'
+  route_name: ip_filter.config_form
+  description: 'Configure IP Filter'
+  parent: system.admin_config_system
+  weight: 99

@@ -1,0 +1,7 @@
+ip_filter.config_form:
+  path: '/admin/config/ip_filter'
+  defaults:
+    _form: '\Drupal\ip_filter\Form\IPFilterConfigForm'
+    _title: 'IP Filter config'
+  requirements:
+    _permission: 'administer'

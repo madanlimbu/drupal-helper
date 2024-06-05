@@ -1,0 +1,6 @@
+name: IP Filter
+description: Provides simple functionality to block specific IPs from acccesing the site.
+package: IP Filter
+type: module
+core_version_requirement: ^9.0 || ^10.0
+configure: ip_filter.config_form

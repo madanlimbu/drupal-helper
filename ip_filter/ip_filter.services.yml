@@ -1,0 +1,20 @@
+services:
+  ip_filter.config:
+    class: Drupal\ip_filter\Service\IPFilterConfigService
+    arguments:
+      - '@state'
+
+  ip_filter.service:
+    class: Drupal\ip_filter\Service\IPFilterService
+    arguments:
+      - '@ip_filter.config'
+      - '@module_handler'
+      - '@router.admin_context'
+      - '@request_stack'
+
+  ip_filter.event_subscriber:
+    class: Drupal\ip_filter\EventSubscriber\IPFilterEventSubscriber
+    arguments:
+      - '@ip_filter.service'
+    tags:
+      - { name: event_subscriber }
