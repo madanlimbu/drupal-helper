@@ -1,0 +1,9 @@
+web_batch.custom/batch_form:
+  path: '/admin/web-batch/custom/batch-form'
+  defaults:
+    _title: 'Custom batch form'
+    _form: 'Drupal\web_batch\Form\BatchFormImpl'
+  requirements:
+    _permission: 'access administrator pages'
+  options:
+    _admin_route: TRUE

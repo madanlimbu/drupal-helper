@@ -1,0 +1,4 @@
+name: Web batch
+description: Light weight re-useable wrapper around Drupal batch
+type: module
+core_version_requirement: ^10
